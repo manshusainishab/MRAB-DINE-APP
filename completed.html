@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/completed.css">
+    <title>Complete Orders</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <ul class="list-item">
+                <li><a href="liveorder.html">Live Orders</a></li>
+                <li><a href="completed.html">Order Completed</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="conatainer2">
+        <ul class="completed-orders">
+            <li class="completed-items">
+                <p>Pizza</p>
+                <p>20 <i class="fa fa-h-square" aria-hidden="true"></i></p>
+            </li>
+        </ul>
+    </div>
+    <script>
+        fetch("http://localhost:3000/canteenorder")
+        .then(response => response.json)
+        .then(order => {
+
+        } )
+    </script>
+</body>
+</html>
